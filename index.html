@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Validando Formulario</title>
+</head>
+ <script defer src="app.js"></script>
+<body>
+    <div class="container">
+        <h2>Formulario Registro</h2>
+    <form id="formulario">
+        <label class="label">
+            Nombre
+            <input type="text" name="name" placeholder="Nombre" required pattern="[a-zA-Z]*">
+            <span></span>
+        </label>
+        <label>
+            Username
+            <input type="text" name="username" placeholder="Username" required pattern="[a-zA-Z]*">
+            <span></span>
+        </label>
+        <label>
+            E-mail
+            <input type="email" name="email" placeholder="corre@correo.xyz" required>
+            <span></span>
+        </label>
+        <label>
+            Password
+            <input type="password" name="password" placeholder="Password">
+            <span></span>
+        </label>
+        <label>
+            Repeat password
+            <input type="password" name="password2" placeholder="Repeat password">
+            <span></span>
+        </label>
+        <label>
+            Phone Number
+            <input type="number" name="tlf" placeholder="9999999999">
+            <span></span>
+        </label>
+        <span id="info"></span>
+        <button id="btn">Enviar</button>
+    </form>
+    </div>
+   
+</body>
+</html>
