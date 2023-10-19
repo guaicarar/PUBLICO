@@ -12,8 +12,8 @@ $enlace = mysqli_connect("127.0.0.1", "root", "", "formulario");
 
 if (!$enlace) {
     echo "Error: No se pudo conectar a MySQL." . PHP_EOL;
-    echo "errno de depuración: " . mysqli_connect_errno() . PHP_EOL;
-    echo "error de depuración: " . mysqli_connect_error() . PHP_EOL;
+    echo "errno de depuraciï¿½n: " . mysqli_connect_errno() . PHP_EOL;
+    echo "error de depuraciï¿½n: " . mysqli_connect_error() . PHP_EOL;
     exit;
 }
 
@@ -43,5 +43,11 @@ if (mysqli_query($enlace, $sql)) {
       echo "Error: " . $sql . "<br>" . mysqli_error($conn);
 }
 
-mysqli_close($enlace);
+mysqli_close($enlace); 
+echo" esto es una prueba actualizada";
+
+echo "Codigo de LASU72";
+
+
+echo " Realizacion del Test  para la rama Prueba1" ; 
 ?>
